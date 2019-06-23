@@ -1,4 +1,3 @@
-// store/index.js
 import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
@@ -6,7 +5,7 @@ const state = {
   counter: 0
 }
 const actions = {
-  add: ({commit}) => {
+  addContener: ({commit}) => {
     return commit('add')
   }
 }
@@ -16,7 +15,7 @@ const mutations = {
   }
 }
 const getters = {
-  getCounter (state) {
+  Counters (state) {
     return state.counter
   }
 }

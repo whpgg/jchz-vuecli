@@ -1,11 +1,11 @@
 <template>
   <div class="App">
     <div>
-      <router-link to="/Home">go Home</router-link>
-      <router-link to="/About">go About</router-link>
+      <router-link to="/Home">Home</router-link>
+      <router-link to="/About">About</router-link>
     </div>
     <div>
-      <p>{{getCounter}}</p>
+      <p>{{Counters}}</p>
       <button @click="add">add</button>
     </div>
     <div>
@@ -21,17 +21,14 @@ export default {
     return {};
   },
   computed: {
-    ...mapGetters(['getCounter'])
+    ...mapGetters(['Counters'])
   },
   methods: {
-    ...mapActions(['add'])
+    ...mapActions(['addContener'])
   }
 };
 </script>
 <style lang="scss" scoped>
 .App {
-  text-align: center;
-  color: skyblue;
-  font-size: 28px;
 }
 </style>
